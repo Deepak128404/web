@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        /*globally declaring variables*/
+        --color: rgb(79, 142, 79);
+        --seccolor: rgb(103, 222, 103);
+        --text: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /* variables can store more than color like text in the above example
+        or string, url's, no's, etc......*/
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        list-style: none;
+        padding: 35px;
+        background-color: var(--color)
+    }
+
+    ul :first-child {
+        --color: grey;
+        /*Locally Declaring the Variable*/
+    }
+
+    div p {
+        background-color: var(--seccolor);
+        font-family: var(--text);
+    }
+</style>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dignissimos laboriosam itaque cumque
+            voluptates fugit? Numquam repellendus beatae asperiores. Dolorum repellendus, optio eaque praesentium et
+            explicabo, cumque adipisci magni ex consectetur aspernatur. Quibusdam vero quas dolor veniam iste ex,
+            placeat omnis, aperiam aliquam nesciunt expedita?
+        </p>
+    </div>
+</body>
+
+</html>
