@@ -19,6 +19,7 @@
         --text: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         /* variables can store more than color like text in the above example
         or string, url's, no's, etc......*/
+
     }
 
     ul {
@@ -28,12 +29,14 @@
     ul li {
         list-style: none;
         padding: 35px;
-        background-color: var(--color)
+        background-color: var(--color);
+        font-family: var(--text);
     }
 
     ul :first-child {
         --color: grey;
         /*Locally Declaring the Variable*/
+        font-family: var(--text);
     }
 
     div p {
