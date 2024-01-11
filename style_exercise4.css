@@ -1,0 +1,39 @@
+:root {
+    /* --licolor: rgb(150, 16, 16); */
+    --bgcolor: rgb(85, 81, 81);
+    --textcolor: rgb(80, 211, 80);
+    --divcolor: rgb(121, 112, 112);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--licolor);
+
+
+}
+
+ul {
+    display: flex;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+div {
+    background-color: var(--divcolor);
+
+}
+
+a {
+    color: var(--textcolor);
+    text-decoration: none;
+}
