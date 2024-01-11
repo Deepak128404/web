@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        img {
+            float: left;
+        }
+
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            /* to avoid oveflow one of the way*/
+
+        }
+
+        .card {
+            border: 2px solid blue;
+
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            clear: both;
+            /* to clear image from both side*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://p325k7wa.twic.pics/high/dragon-ball/dragonball-project-z/00-page-setup/dbzk_game-thumbnail.jpg?twic=v1/step=10/quality=80/max=760"
+            alt="" width="230">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugiat ab tenetur praesentium sequi,
+                nisi nesciunt officiis magnam ut at voluptatibus sapiente ducimus deleniti esse alias nihil. Soluta iure
+                ipsum voluptatibus assumenda ratione ut?</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus maiores modi eos
+            expedita rerum ducimus consequuntur molestiae dolores eveniet exercitationem provident optio perferendis
+            iusto eum veritatis autem voluptatibus nobis accusamus, in vitae!</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
