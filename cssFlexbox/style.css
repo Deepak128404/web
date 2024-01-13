@@ -1,0 +1,32 @@
+.container {
+    border: 2px solid darkblue;
+    height: 50vh;
+    width: 80vw;
+    background-color: gray;
+    /* properties used on container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    gap: 10px;
+    /* flex-flow: row wrap; shorthand for direction & flex wrap  */
+}
+.item {
+    height: 25px;
+    width: 15px;
+    background-color: blueviolet;
+    padding: 5px;
+    border: 2px solid;
+    margin: 5px;
+    /* properties on items*/
+}
+/* .order-1{
+    order: 1;
+    flex-grow:5 ;
+}
+.order-2{
+    flex-shrink: 2 ;
+    align-self: flex-end;
+}
+ */
