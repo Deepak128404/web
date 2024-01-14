@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid-1</title>
     <style>
-
-        .container{
+        .container {
             border: 2px solid blueviolet;
             background-color: aliceblue;
             display: grid;
@@ -14,13 +14,13 @@
             grid-template-rows: [first-row] 150px [dusra] 150px;
         }
 
-        .item{
+        .item {
             height: 55px;
             width: 55px;
             border: 2px solid gray;
         }
 
-        .grid-1{
+        .grid-1 {
             /* grid-row: 1/2 ;
             grid-column: 1/2; */
             grid-column: phela/dusra;
@@ -28,6 +28,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="item grid-1 ">1</div>
@@ -36,6 +37,7 @@
         <div class="item grid-1">4</div>
         <div class="item">5</div>
     </div>
-    
+
 </body>
+
 </html>
