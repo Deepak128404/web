@@ -1,0 +1,28 @@
+.container {
+    background-color: aliceblue;
+    border: 2px solid;
+    display: grid;
+    gap: 25px;
+    grid-template-areas: 'first first'
+        'second second';
+    /* justify-items: center;
+    align-items: center; */
+    /* justify and align in container */
+}
+
+.item {
+    background-color: aquamarine;
+    height: 55px;
+    width: 55px;
+}
+
+.item.class1 {
+    grid-area: first;
+    justify-self: end;
+    /* align-self: flex-end; */
+    /* align self in grid */
+}
+
+.item.class2 {
+    grid-area: second;
+}
