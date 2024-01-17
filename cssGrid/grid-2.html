@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Grid-2></Grid-2></title>
+    <title>Grid-2</title>
+    <style>
+        .container {
+            background-color: aliceblue;
+            border: 2px solid;
+            display: grid;
+            gap: 25px;
+            grid-template-areas: 'first first'
+                'second second';
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            background-color: aquamarine;
+            height: 55px;
+            width: 55px;
+        }
+
+        .item.class1 {
+            grid-area: first;
+        }
+
+        .item.class2 {
+            grid-area: second;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item class2">3</div>
+        <div class="item">4</div>
+        <div class="item class1">5</div>
+    </div>
 </body>
+
 </html>
