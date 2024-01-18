@@ -1,24 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.navbar{
+
+.navbar {
     display: flex;
     background-color: transparent;
     height: 20vh;
     align-items: center;
 }
-.flexEnd{
+
+.flexEnd {
     display: flex;
     text-align: left;
     width: 85%;
     justify-content: end;
     gap: 25px;
 }
-.company-name{
+
+.company-name {
     font-size: larger;
 }
-.small-name{
+
+.small-name {
     font-size: 10px;
     padding-top: 2px;
 }
@@ -28,38 +32,45 @@ a:link {
     background-color: transparent;
     text-decoration: none;
     font-size: 25px;
-     }
-img{
-    width: 50px ;
+}
+
+img {
+    width: 50px;
     border-radius: 50%;
     padding: 10px
 }
-.FlexEnd-items{
+
+.FlexEnd-items {
     font-size: larger;
 }
-.FlexEnd-items:hover{
+
+.FlexEnd-items:hover {
     color: green;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.text1{
-font-weight: bolder;
-font-size: 25px;
+
+.text1 {
+    font-weight: bolder;
+    font-size: 25px;
 }
-button{
-margin-top: 25px;
-padding: 9px;
-border: none;
-background-color: rgb(48, 215, 215);
-color: white;
-font-size: large;
-border-radius: 9px;
+
+button {
+    margin-top: 25px;
+    padding: 9px;
+    border: none;
+    background-color: rgb(48, 215, 215);
+    color: white;
+    font-size: large;
+    border-radius: 9px;
 }
-button:hover{
-background-color: aqua;
-color: black;
+
+button:hover {
+    background-color: aqua;
+    color: black;
 }
