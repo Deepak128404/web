@@ -1,0 +1,25 @@
+.container {
+    border: 2px solid;
+    height: 100vh;
+    width: 80vw;
+    background-color: aliceblue;
+}
+
+.box {
+    border: 2px solid;
+    height: 55px;
+    width: 55px;
+    background-color: bisque;
+    /* /* transform: rotate(270deg); rotate propert*/
+    /* transform: rotate(.55turn);*/
+    /* transform: rotateY(85deg);*/
+    /* transform: translate(40vh); */
+    /* transform: skew(25deg); */
+    transform-origin: 10% 30%;
+    transform: rotate(180deg) skew(25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .box:hover{transform: translate(0vh);} */
