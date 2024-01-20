@@ -6,30 +6,59 @@
     <title>Ultra-Edit</title>
     <style>
         .image{
+            height: 55px;
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
+            align-self: flex-start;
+        } 
         .text1{
             padding-left: 25px;
+            padding-top: 17px;
             font-size: larger;
+            text-align: center;
         }
         .text2{
             padding-left: 5px;
             font-size: smaller;
         }
+        .container{
+            height: 80vh;
+            width: 80vw;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+        .boxes{
+            height: 85px;
+            width: 85px;
+            background-color: beige;
+            border: 2px solid;
+        }
         
     </style>
 </head>
 <body>
-    <main>
+    <main style="display: flex; justify-content: center; align-items: center ; flex-flow: column; height: 100vh; width: 100vw; ;" >
         <div class="image">
             <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt="UltraEdit Image" width="55px ">
             <span class="text1">Download UltraEdit
                 <span class="text2">v2023.2(released 12/15/2023) | Hotfix</span>
             </span>
         </div>
-        
+        <div class="container">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
     </main>
 </body>
 </html>
