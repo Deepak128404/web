@@ -6,44 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables</title>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    :root {
-        /*globally declaring variables*/
-        --color: rgb(79, 142, 79);
-        --seccolor: rgb(103, 222, 103);
-        --text: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        /* variables can store more than color like text in the above example
-        or string, url's, no's, etc......*/
-
-    }
-
-    ul {
-        display: flex;
-    }
-
-    ul li {
-        list-style: none;
-        padding: 35px;
-        background-color: var(--color);
-        font-family: var(--text);
-    }
-
-    ul :first-child {
-        --color: grey;
-        /*Locally Declaring the Variable*/
-        font-family: var(--text);
-    }
-
-    div p {
-        background-color: var(--seccolor);
-        font-family: var(--text);
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 
 <body>
     <div>
